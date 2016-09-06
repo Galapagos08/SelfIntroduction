@@ -315,6 +315,9 @@
                             <constraint firstItem="vkf-bV-0IF" firstAttribute="centerX" secondItem="Zll-gH-imb" secondAttribute="centerX" id="d6b-6v-6vy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="madLib" destination="vkf-bV-0IF" id="8GO-jT-4Sp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMR-cS-NFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

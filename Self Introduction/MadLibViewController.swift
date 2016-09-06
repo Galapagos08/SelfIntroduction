@@ -36,7 +36,7 @@ class MadLibController: UIViewController {
                 }
             }
         }
-        madlibButton.isHidden = madlibButtonIsHidden
+      //  madlibButton.isHidden = madlibButtonIsHidden
     }
     
     @IBOutlet var madlibButton: UIButton!
@@ -50,14 +50,12 @@ class MadLibController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-/*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! MadLib2ViewController
-        destination.name = name
-    } */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! MadLib2Controller
+        destination.madLib.text = "One time, when I was trying to get a very \(userEntries[0]) piece of equipment for my homebrewing setup, I accidently ordered a \(userEntries[1]) instead."    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
