@@ -19,6 +19,7 @@
 		F70AAD821D7F506000516779 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD811D7F506000516779 /* LanguagesViewController.swift */; };
 		F70AAD841D7F507900516779 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD831D7F507900516779 /* FavoritesViewController.swift */; };
 		F70AAD861D7F513D00516779 /* MadLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD851D7F513D00516779 /* MadLibViewController.swift */; };
+		F70AAD881D7F6C0700516779 /* MadLib2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F70AAD811D7F506000516779 /* LanguagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		F70AAD831D7F507900516779 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F70AAD851D7F513D00516779 /* MadLibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLibViewController.swift; sourceTree = "<group>"; };
+		F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLib2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				F70AAD831D7F507900516779 /* FavoritesViewController.swift */,
 				F70AAD851D7F513D00516779 /* MadLibViewController.swift */,
 				F70AAD531D7F475B00516779 /* Main.storyboard */,
+				F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */,
 				F70AAD561D7F475B00516779 /* Assets.xcassets */,
 				F70AAD581D7F475B00516779 /* LaunchScreen.storyboard */,
 				F70AAD5B1D7F475B00516779 /* Info.plist */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70AAD881D7F6C0700516779 /* MadLib2ViewController.swift in Sources */,
 				F70AAD521D7F475B00516779 /* ViewController.swift in Sources */,
 				F70AAD861D7F513D00516779 /* MadLibViewController.swift in Sources */,
 				F70AAD501D7F475B00516779 /* AppDelegate.swift in Sources */,

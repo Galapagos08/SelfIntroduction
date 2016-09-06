@@ -190,32 +190,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mad Lib:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oau-oM-1js">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mad Lib:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oau-oM-1js">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="TEXT HERE" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="KXI-WG-6z1">
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" preservesSuperviewLayoutMargins="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="KXI-WG-6z1">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Here's your chance to have some good-natured fun at my expense. In the field below, enter an adjective and then click on the "enter" button. Then enter a noun and again click on the "enter" button. Then you can read a short story about me.</string>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-ha-9fe">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOx-0x-BDX">
+                                <color key="backgroundColor" red="0.18553931111790789" green="1" blue="0.75351205948809563" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enter:" destination="4uO-es-gsw" eventType="touchUpInside" id="Wo6-xV-0um"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-hk-JLk">
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Go to mad lib"/>
+                                <connections>
+                                    <action selector="goToMadLib:" destination="4uO-es-gsw" eventType="touchUpInside" id="bqS-eT-OMI"/>
+                                    <segue destination="3DY-LQ-uwd" kind="show" id="B9w-we-7jH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KXI-WG-6z1" firstAttribute="top" secondItem="oau-oM-1js" secondAttribute="bottom" constant="8" symbolic="YES" id="5qF-70-5rR"/>
-                            <constraint firstItem="x8j-bJ-c21" firstAttribute="top" secondItem="KXI-WG-6z1" secondAttribute="bottom" constant="8" symbolic="YES" id="Ad3-4y-FXp"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="oau-oM-1js" secondAttribute="leading" id="Qcm-OV-a56"/>
-                            <constraint firstItem="oau-oM-1js" firstAttribute="top" secondItem="q5t-0z-lHC" secondAttribute="bottom" constant="8" symbolic="YES" id="XZ7-Iu-3WH"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="KXI-WG-6z1" secondAttribute="leading" id="nKz-q0-QPe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KXI-WG-6z1" secondAttribute="trailing" id="rx9-gt-Cbv"/>
+                            <constraint firstItem="KXI-WG-6z1" firstAttribute="top" secondItem="oau-oM-1js" secondAttribute="bottom" constant="8" symbolic="YES" id="T8W-UK-Abo"/>
+                            <constraint firstItem="Ygb-hk-JLk" firstAttribute="top" secondItem="SOx-0x-BDX" secondAttribute="bottom" constant="8" symbolic="YES" id="e90-Wy-H3p"/>
+                            <constraint firstItem="SOx-0x-BDX" firstAttribute="centerX" secondItem="XKO-fS-pTi" secondAttribute="centerX" id="eT8-EX-YZ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KXI-WG-6z1" secondAttribute="trailing" id="gbt-ag-5vw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KXI-WG-6z1" secondAttribute="leading" id="jeb-Kl-Lod"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ecO-ha-9fe" secondAttribute="leading" id="k1d-0o-K9o"/>
+                            <constraint firstItem="ecO-ha-9fe" firstAttribute="top" secondItem="KXI-WG-6z1" secondAttribute="bottom" constant="8" symbolic="YES" id="m3g-Rr-Lz8"/>
+                            <constraint firstItem="SOx-0x-BDX" firstAttribute="top" secondItem="ecO-ha-9fe" secondAttribute="bottom" constant="8" symbolic="YES" id="o1N-A6-vsf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ecO-ha-9fe" secondAttribute="trailing" id="oDZ-qQ-RTb"/>
+                            <constraint firstItem="oau-oM-1js" firstAttribute="top" secondItem="q5t-0z-lHC" secondAttribute="bottom" constant="8" symbolic="YES" id="vnj-uR-gpM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oau-oM-1js" secondAttribute="leading" id="wSS-pE-0bK"/>
+                            <constraint firstItem="Ygb-hk-JLk" firstAttribute="centerX" secondItem="XKO-fS-pTi" secondAttribute="centerX" id="yX4-9S-fKG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="madlibButton" destination="Ygb-hk-JLk" id="06D-j4-hbF"/>
+                        <outlet property="textField" destination="ecO-ha-9fe" id="e6i-e5-btI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTh-UG-d2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="750"/>
+            <point key="canvasLocation" x="516" y="749.7751124437782"/>
         </scene>
         <!--Languages View Controller-->
         <scene sceneID="lvO-Ay-YYi">
@@ -256,6 +289,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B1-il-FW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1294" y="750"/>
+        </scene>
+        <!--Mad Lib2 Controller-->
+        <scene sceneID="Z4C-LL-eWg">
+            <objects>
+                <viewController id="3DY-LQ-uwd" customClass="MadLib2Controller" customModule="Self_Introduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bhk-B6-NHp"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIb-3P-lrq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zll-gH-imb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-bV-0IF">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vkf-bV-0IF" firstAttribute="leading" secondItem="Zll-gH-imb" secondAttribute="leadingMargin" id="6fO-N1-1dS"/>
+                            <constraint firstItem="vkf-bV-0IF" firstAttribute="centerY" secondItem="Zll-gH-imb" secondAttribute="centerY" id="96e-gR-6rG"/>
+                            <constraint firstItem="vkf-bV-0IF" firstAttribute="centerX" secondItem="Zll-gH-imb" secondAttribute="centerX" id="d6b-6v-6vy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMR-cS-NFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="1157"/>
         </scene>
         <!--Hometown View Controller-->
         <scene sceneID="bmf-iT-Bcb">
