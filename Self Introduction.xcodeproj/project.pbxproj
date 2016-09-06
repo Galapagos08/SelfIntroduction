@@ -14,6 +14,11 @@
 		F70AAD5A1D7F475B00516779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70AAD581D7F475B00516779 /* LaunchScreen.storyboard */; };
 		F70AAD651D7F475B00516779 /* Self_IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD641D7F475B00516779 /* Self_IntroductionTests.swift */; };
 		F70AAD701D7F475B00516779 /* Self_IntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD6F1D7F475B00516779 /* Self_IntroductionUITests.swift */; };
+		F70AAD7E1D7F4F0800516779 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD7D1D7F4F0800516779 /* InterestsViewController.swift */; };
+		F70AAD801D7F4F7D00516779 /* HometownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD7F1D7F4F7D00516779 /* HometownViewController.swift */; };
+		F70AAD821D7F506000516779 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD811D7F506000516779 /* LanguagesViewController.swift */; };
+		F70AAD841D7F507900516779 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD831D7F507900516779 /* FavoritesViewController.swift */; };
+		F70AAD861D7F513D00516779 /* MadLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD851D7F513D00516779 /* MadLibViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F70AAD6B1D7F475B00516779 /* Self IntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Self IntroductionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70AAD6F1D7F475B00516779 /* Self_IntroductionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Self_IntroductionUITests.swift; sourceTree = "<group>"; };
 		F70AAD711D7F475B00516779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70AAD7D1D7F4F0800516779 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		F70AAD7F1D7F4F7D00516779 /* HometownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HometownViewController.swift; sourceTree = "<group>"; };
+		F70AAD811D7F506000516779 /* LanguagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
+		F70AAD831D7F507900516779 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F70AAD851D7F513D00516779 /* MadLibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLibViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,12 @@
 			children = (
 				F70AAD4F1D7F475B00516779 /* AppDelegate.swift */,
 				F70AAD511D7F475B00516779 /* ViewController.swift */,
+				F70AAD7D1D7F4F0800516779 /* InterestsViewController.swift */,
+				F70AAD7F1D7F4F7D00516779 /* HometownViewController.swift */,
+				F70AAD811D7F506000516779 /* LanguagesViewController.swift */,
+				F70AAD831D7F507900516779 /* FavoritesViewController.swift */,
 				F70AAD531D7F475B00516779 /* Main.storyboard */,
+				F70AAD851D7F513D00516779 /* MadLibViewController.swift */,
 				F70AAD561D7F475B00516779 /* Assets.xcassets */,
 				F70AAD581D7F475B00516779 /* LaunchScreen.storyboard */,
 				F70AAD5B1D7F475B00516779 /* Info.plist */,
@@ -263,7 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70AAD521D7F475B00516779 /* ViewController.swift in Sources */,
+				F70AAD861D7F513D00516779 /* MadLibViewController.swift in Sources */,
 				F70AAD501D7F475B00516779 /* AppDelegate.swift in Sources */,
+				F70AAD7E1D7F4F0800516779 /* InterestsViewController.swift in Sources */,
+				F70AAD821D7F506000516779 /* LanguagesViewController.swift in Sources */,
+				F70AAD841D7F507900516779 /* FavoritesViewController.swift in Sources */,
+				F70AAD801D7F4F7D00516779 /* HometownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +532,7 @@
 				F70AAD761D7F475B00516779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F70AAD771D7F475B00516779 /* Build configuration list for PBXNativeTarget "Self IntroductionTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +541,7 @@
 				F70AAD791D7F475B00516779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F70AAD7A1D7F475B00516779 /* Build configuration list for PBXNativeTarget "Self IntroductionUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +550,7 @@
 				F70AAD7C1D7F475B00516779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
