@@ -26,7 +26,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Interests"/>
                                 <connections>
-                                    <segue destination="Y9I-mf-zJT" kind="show" id="szJ-mQ-znx"/>
+                                    <segue destination="Y9I-mf-zJT" kind="show" id="9P8-lb-pBp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04Q-MC-eXF">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479.19999999999999" y="57.121439280359823"/>
+            <point key="canvasLocation" x="516" y="57"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="Aqn-db-YLd">
@@ -109,22 +109,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-fy-gK4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="My Favorites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-fy-gK4">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="My favorite television show is Firefly. " lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="tKU-nk-byZ">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tKU-nk-byZ" firstAttribute="top" secondItem="NWd-fy-gK4" secondAttribute="bottom" constant="8" symbolic="YES" id="0Qg-gk-AhC"/>
                             <constraint firstItem="NWd-fy-gK4" firstAttribute="top" secondItem="qRl-8B-9dw" secondAttribute="bottom" constant="8" symbolic="YES" id="DQn-Gx-3d2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tKU-nk-byZ" secondAttribute="leading" id="UO1-Ym-IbG"/>
                             <constraint firstAttribute="leadingMargin" secondItem="NWd-fy-gK4" secondAttribute="leading" id="aAr-9Z-oTn"/>
+                            <constraint firstItem="h3g-U0-e15" firstAttribute="top" secondItem="tKU-nk-byZ" secondAttribute="bottom" constant="8" symbolic="YES" id="av0-Zi-CTF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tKU-nk-byZ" secondAttribute="trailing" id="rHi-gD-g4d"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64S-C3-itZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-169" y="768"/>
+            <point key="canvasLocation" x="-255" y="750"/>
         </scene>
         <!--Interests View Controller-->
         <scene sceneID="NvP-8w-kqz">
@@ -134,26 +144,30 @@
                         <viewControllerLayoutGuide type="top" id="VjO-e9-Z6v"/>
                         <viewControllerLayoutGuide type="bottom" id="l1R-71-TRB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FH2-Ic-yhh">
+                    <view key="view" contentMode="redraw" id="FH2-Ic-yhh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Interests:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-HN-N9X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="My Interests:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-HN-N9X">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qX-ZR-ijY">
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="I enjoy spending time with my family, outdoor activities like hiking and camping, reading, brewing beer, and gardening." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="1qX-ZR-ijY">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="1qX-ZR-ijY" firstAttribute="top" secondItem="uW5-HN-N9X" secondAttribute="bottom" constant="8" symbolic="YES" id="0Fp-L8-M3F"/>
                             <constraint firstItem="1qX-ZR-ijY" firstAttribute="leading" secondItem="FH2-Ic-yhh" secondAttribute="leadingMargin" id="MSd-C6-jrJ"/>
+                            <constraint firstItem="l1R-71-TRB" firstAttribute="top" secondItem="1qX-ZR-ijY" secondAttribute="bottom" constant="8" symbolic="YES" id="XFo-UM-E9J"/>
                             <constraint firstItem="1qX-ZR-ijY" firstAttribute="centerX" secondItem="FH2-Ic-yhh" secondAttribute="centerX" id="l3J-9t-DOf"/>
                             <constraint firstItem="uW5-HN-N9X" firstAttribute="leading" secondItem="FH2-Ic-yhh" secondAttribute="leadingMargin" id="lmS-6K-cET"/>
                             <constraint firstItem="uW5-HN-N9X" firstAttribute="top" secondItem="VjO-e9-Z6v" secondAttribute="bottom" constant="8" symbolic="YES" id="xhB-qb-fcP"/>
@@ -162,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYC-fD-LF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="-19.340329835082461"/>
+            <point key="canvasLocation" x="1293.5999999999999" y="54.422788605697157"/>
         </scene>
         <!--Mad Lib Controller-->
         <scene sceneID="0Xi-Wu-eFn">
@@ -176,22 +190,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mad Lib:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oau-oM-1js">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mad Lib:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oau-oM-1js">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="TEXT HERE" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="KXI-WG-6z1">
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="KXI-WG-6z1" firstAttribute="top" secondItem="oau-oM-1js" secondAttribute="bottom" constant="8" symbolic="YES" id="5qF-70-5rR"/>
+                            <constraint firstItem="x8j-bJ-c21" firstAttribute="top" secondItem="KXI-WG-6z1" secondAttribute="bottom" constant="8" symbolic="YES" id="Ad3-4y-FXp"/>
                             <constraint firstAttribute="leadingMargin" secondItem="oau-oM-1js" secondAttribute="leading" id="Qcm-OV-a56"/>
                             <constraint firstItem="oau-oM-1js" firstAttribute="top" secondItem="q5t-0z-lHC" secondAttribute="bottom" constant="8" symbolic="YES" id="XZ7-Iu-3WH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KXI-WG-6z1" secondAttribute="leading" id="nKz-q0-QPe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KXI-WG-6z1" secondAttribute="trailing" id="rx9-gt-Cbv"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTh-UG-d2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="750"/>
+            <point key="canvasLocation" x="516" y="750"/>
         </scene>
         <!--Languages View Controller-->
         <scene sceneID="lvO-Ay-YYi">
@@ -205,22 +229,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Languages Spoken:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzg-5F-SPH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Languages Spoken:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzg-5F-SPH">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="DdC-Je-fqG">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">I speak English. I studied French for three years in high school, and I studied Spanish for one year in college. But apparently neither of them took.</string>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="zI3-21-qBK" firstAttribute="top" secondItem="DdC-Je-fqG" secondAttribute="bottom" constant="8" symbolic="YES" id="IHV-4C-JMm"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bzg-5F-SPH" secondAttribute="leading" id="IYC-fX-Em2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DdC-Je-fqG" secondAttribute="leading" id="N0A-P3-B9J"/>
                             <constraint firstItem="bzg-5F-SPH" firstAttribute="top" secondItem="24c-5b-5Qf" secondAttribute="bottom" constant="8" symbolic="YES" id="XRQ-Dj-kfp"/>
+                            <constraint firstItem="DdC-Je-fqG" firstAttribute="top" secondItem="bzg-5F-SPH" secondAttribute="bottom" constant="8" symbolic="YES" id="f4O-n1-9HL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DdC-Je-fqG" secondAttribute="trailing" id="l41-c0-LTc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B1-il-FW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="733"/>
+            <point key="canvasLocation" x="1294" y="750"/>
         </scene>
         <!--Hometown View Controller-->
         <scene sceneID="bmf-iT-Bcb">
@@ -234,22 +269,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hometown:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-az-m3u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="My Hometown:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-az-m3u">
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="So0-2Y-S2W">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">I am from a small town in the Florida panhandle called Niceville. Niceville is located in Okaloosa County and is about halfway between Pensacola, FL and Panama City, FL.</string>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="So0-2Y-S2W" secondAttribute="trailing" id="17t-Ms-are"/>
                             <constraint firstItem="RWb-az-m3u" firstAttribute="leading" secondItem="dVj-DX-6wC" secondAttribute="leadingMargin" id="GVR-dx-6ft"/>
                             <constraint firstItem="RWb-az-m3u" firstAttribute="top" secondItem="4x3-uP-Ekt" secondAttribute="bottom" constant="8" symbolic="YES" id="LiN-vC-QCt"/>
+                            <constraint firstItem="So0-2Y-S2W" firstAttribute="top" secondItem="RWb-az-m3u" secondAttribute="bottom" constant="8" symbolic="YES" id="OuE-7k-qNe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="So0-2Y-S2W" secondAttribute="leading" id="Yty-FK-pdO"/>
+                            <constraint firstItem="3aM-hd-AA1" firstAttribute="top" secondItem="So0-2Y-S2W" secondAttribute="bottom" constant="8" symbolic="YES" id="lxb-n1-WA0"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVY-Oc-HvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="26.53673163418291"/>
+            <point key="canvasLocation" x="2092" y="394.45277361319341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tTN-Ya-67c">
@@ -267,7 +313,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDF-NF-xe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="57.121439280359823"/>
+            <point key="canvasLocation" x="-254" y="56"/>
         </scene>
     </scenes>
     <resources>
