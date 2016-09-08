@@ -9,54 +9,74 @@
 import UIKit
 
 class MadLibController: UIViewController {
-    
-    var userEntries = [String]()
-    var adjective: String?
-    var noun: String?
-    var shouldAllowMadlib: Bool {
-        return userEntries.count >= 2
-    }
-    
-    var madlibButtonIsHidden: Bool {
-        return !shouldAllowMadlib
-    }
-    
+    var state: MadLibState?
     @IBOutlet var textField: UITextField!
-    @IBAction func enter(_ sender: AnyObject) {
-        if (userEntries.count == 0) {
-            if let input = textField.text, input.characters.count > 0 {
-                adjective = input
-                userEntries.append(adjective!)
-            } else if (userEntries.count == 1) {
-                if let input = textField.text, input.characters.count > 0 {
-                    noun = input
-                    userEntries.append(noun!)
-                } else {
-                    print("Text field is empty")
-                }
-            }
-        }
-      //  madlibButton.isHidden = madlibButtonIsHidden
-    }
-    
     @IBOutlet var madlibButton: UIButton!
-    
-    @IBAction func goToMadLib(_ sender: AnyObject) {
+    @IBOutlet var enterButton: UIButton!
+
+    @IBAction func enter(_ sender: AnyObject) {
+        guard let newText = textField?.text, newText.isEmpty == false else {
+            return
+        }
         
+        
+        switch state! {
+            case .noStrings:
+                state = .oneString(newText)
+            case let .oneString(first):
+                state = .twoStrings(first, newText)
+            case .twoStrings:
+                fatalError("impossible")
+        }
+        
+        
+        updateUsingModel()
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        state = .noStrings
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! MadLib2Controller
-        destination.madLib.text = "One time, when I was trying to get a very \(userEntries[0]) piece of equipment for my homebrewing setup, I accidently ordered a \(userEntries[1]) instead."    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUsingModel()
+    }
+    
+    func updateUsingModel() {
+        switch state! {
+        case .noStrings:
+            madlibButton.isHidden = true
+            textField.isHidden = false
+            enterButton.isHidden = false
+            textField.text = ""
+            textField.placeholder = "Enter an adjective"
+        case .oneString:
+            madlibButton.isHidden = true
+            textField.isHidden = false
+            enterButton.isHidden = false
+            textField.text = ""
+            textField.placeholder = "Enter a noun"
+        case .twoStrings:
+            madlibButton.isHidden = false
+            textField.isHidden = true
+            enterButton.isHidden = true
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let storyVC = segue.destination as! MadLib2Controller
+        guard case let .twoStrings(first, second)? = state else {
+            fatalError("How Sway?")
+            
+        }
+        storyVC.model = (first, second)
     
+    }
+
 }

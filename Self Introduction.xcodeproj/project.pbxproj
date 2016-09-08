@@ -20,6 +20,7 @@
 		F70AAD841D7F507900516779 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD831D7F507900516779 /* FavoritesViewController.swift */; };
 		F70AAD861D7F513D00516779 /* MadLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD851D7F513D00516779 /* MadLibViewController.swift */; };
 		F70AAD881D7F6C0700516779 /* MadLib2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */; };
+		F7DD767D1D81BC6600ABAA2F /* MadLibState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DD767C1D81BC6600ABAA2F /* MadLibState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F70AAD831D7F507900516779 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F70AAD851D7F513D00516779 /* MadLibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLibViewController.swift; sourceTree = "<group>"; };
 		F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLib2ViewController.swift; sourceTree = "<group>"; };
+		F7DD767C1D81BC6600ABAA2F /* MadLibState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadLibState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,17 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				F70AAD4F1D7F475B00516779 /* AppDelegate.swift */,
-				F70AAD511D7F475B00516779 /* ViewController.swift */,
-				F70AAD7D1D7F4F0800516779 /* InterestsViewController.swift */,
-				F70AAD7F1D7F4F7D00516779 /* HometownViewController.swift */,
-				F70AAD811D7F506000516779 /* LanguagesViewController.swift */,
+				F70AAD561D7F475B00516779 /* Assets.xcassets */,
 				F70AAD831D7F507900516779 /* FavoritesViewController.swift */,
+				F70AAD7F1D7F4F7D00516779 /* HometownViewController.swift */,
+				F70AAD5B1D7F475B00516779 /* Info.plist */,
+				F70AAD7D1D7F4F0800516779 /* InterestsViewController.swift */,
+				F70AAD811D7F506000516779 /* LanguagesViewController.swift */,
+				F70AAD581D7F475B00516779 /* LaunchScreen.storyboard */,
+				F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */,
+				F7DD767C1D81BC6600ABAA2F /* MadLibState.swift */,
 				F70AAD851D7F513D00516779 /* MadLibViewController.swift */,
 				F70AAD531D7F475B00516779 /* Main.storyboard */,
-				F70AAD871D7F6C0700516779 /* MadLib2ViewController.swift */,
-				F70AAD561D7F475B00516779 /* Assets.xcassets */,
-				F70AAD581D7F475B00516779 /* LaunchScreen.storyboard */,
-				F70AAD5B1D7F475B00516779 /* Info.plist */,
+				F70AAD511D7F475B00516779 /* ViewController.swift */,
 			);
 			path = "Self Introduction";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				F70AAD821D7F506000516779 /* LanguagesViewController.swift in Sources */,
 				F70AAD841D7F507900516779 /* FavoritesViewController.swift in Sources */,
 				F70AAD801D7F4F7D00516779 /* HometownViewController.swift in Sources */,
+				F7DD767D1D81BC6600ABAA2F /* MadLibState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

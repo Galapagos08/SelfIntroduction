@@ -9,23 +9,24 @@
 import UIKit
 
 class MadLib2Controller: UIViewController {
-    var text: String? {
-        didSet {
-            madLib.text = text ?? ""
+    
+    @IBOutlet var madLib: UILabel!
+    internal var model: (first: String, second: String)?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let (first, second) = model else {
+            fatalError("the impossible has happend")
         }
+        
+        madLib.text = "\(first) was your first word. \(second) was your second word"
     }
     
-
-    @IBOutlet var madLib: UITextField!
+}
+extension MadLib2Controller {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(model)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
